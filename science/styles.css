@@ -35,6 +35,8 @@ body {
 
 .btnWrap {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -59,9 +61,10 @@ body {
 }
 
 .btn {
-  width: 400px;
+  width: 40%;
   font-size: 30px;
   margin-top: 70px;
+  text-align: center;
 }
 
 .b2 {
@@ -101,6 +104,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -128,5 +132,39 @@ body {
 
   100% {
     background-position: right;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .logo {
+    flex-direction: column-reverse;
+  }
+
+  .logo h1 {
+    font-size: 90px;
+  }
+
+  .btnWrap,
+  .lessons-wrapper {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 70%;
+  }
+
+  .lesson-btn {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lesson-btn,
+  .btn {
+    font-size: 20px;
+  }
+
+  .logo h1 {
+    font-size: 70px;
   }
 }
