@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./science/styles.css" />
+
+    <title>Science</title>
+  </head>
+  <body>
+    <div class="logo">
+      <h1>Science</h1>
+      <img src="./science/images/flask.png" alt="logo" />
+    </div>
+
+    <div class="btnWrap">
+      <a href="./science/byGrades.html" target="_blank" class="btn"
+        ><p>View lessons by grades</p></a
+      >
+      <a href="" class="btn"><p>View lessons by category</p></a>
+    </div>
+  </body>
+
+  <script>
+    const logo = document.querySelector(".logo");
+    window.onload = () => {
+      logo.classList.add("show");
+    };
+  </script>
+</html>
